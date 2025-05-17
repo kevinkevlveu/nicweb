@@ -2,6 +2,7 @@ import React from 'react';
 import { APP_NAME, APP_TAGLINE, APP_STORE_URL, PLAY_STORE_URL } from '../constants';
 import AppStoreButton from './common/AppStoreButton';
 import AnimatedElement from './common/AnimatedElement';
+import screenshotImage from '../assets/screenshot.png';
 
 const Hero = () => {
   return (
@@ -57,7 +58,7 @@ const Hero = () => {
               <div className="absolute -bottom-4 -right-4 w-32 h-32 rounded-full bg-teal-500 opacity-20 blur-lg"></div>
               <div className="mt-8 flex items-center justify-center lg:justify-start">
               <img 
-                src="/src/assets/screenshot.png"
+                src={screenshotImage}
                 className="w-80 h-auto rounded-lg border-2 border-white"
                 alt="App screenshot" 
               />
