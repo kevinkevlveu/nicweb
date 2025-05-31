@@ -1,5 +1,6 @@
 import React from 'react';
 import { ChevronRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { APP_NAME, footerLinks } from '../constants';
 import nicLogo from '../assets/nic.png';
 
@@ -28,13 +29,13 @@ const Footer = () => {
               <ul className="space-y-2">
                 {column.links.map((link, linkIndex) => (
                   <li key={linkIndex}>
-                    <a 
-                      href={link.url} 
+                    <Link 
+                      to={link.url} 
                       className="text-gray-400 hover:text-teal-500 transition-colors flex items-center text-sm xs:text-base"
                     >
                       <ChevronRight size={12} className="xs:w-3.5 xs:h-3.5 mr-1" />
                       {link.name}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
